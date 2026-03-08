@@ -12,13 +12,17 @@ const Hero = () => {
   };
 
   return (
-    <section id="hero" className="relative h-screen flex items-center justify-center overflow-hidden">
+    <section
+      id="hero"
+      className="relative md:h-screen mt-5 md:mt-16 flex items-center justify-center overflow-hidden"
+    >
       <div
         className="absolute inset-0 z-0"
         style={{
-          backgroundImage: 'url(https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=1920)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
+          backgroundImage:
+            "url(https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=1920)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/40" />
@@ -28,7 +32,7 @@ const Hero = () => {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.3 }}
-        className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
+        className="relative z-10 max-w-7xl mx-auto mt-28 md:mt-0 px-4 sm:px-6 lg:px-8 text-center"
       >
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -47,8 +51,10 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.7 }}
           className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight"
         >
-          Building Strong<br />
-          <span className="text-[#FFC107]">Foundations</span> for<br />
+          Building Strong
+          <br />
+          <span className="text-[#FFC107]">Foundations</span> for
+          <br />
           Tomorrow
         </motion.h1>
 
@@ -58,8 +64,9 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.9 }}
           className="text-xl md:text-2xl text-gray-200 mb-12 max-w-3xl mx-auto leading-relaxed"
         >
-          Ansh Developers is a trusted construction contractor in Lucknow delivering
-          high-quality residential and commercial construction projects.
+          Ansh Developers is a trusted construction contractor in Lucknow
+          delivering high-quality residential and commercial construction
+          projects.
         </motion.p>
 
         <motion.div
@@ -69,14 +76,14 @@ const Hero = () => {
           className="flex flex-col sm:flex-row items-center justify-center gap-6"
         >
           <button
-            onClick={() => scrollToSection('portfolio')}
+            onClick={() => scrollToSection("portfolio")}
             className="group bg-[#FFC107] text-[#111111] px-8 py-4 rounded-md font-semibold text-lg hover:bg-[#ffb300] transition-all duration-300 hover:shadow-2xl hover:scale-105 flex items-center gap-2"
           >
             View Portfolio
             <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
           </button>
           <button
-            onClick={() => scrollToSection('contact')}
+            onClick={() => scrollToSection("contact")}
             className="group bg-transparent border-2 border-white text-white px-8 py-4 rounded-md font-semibold text-lg hover:bg-white hover:text-[#111111] transition-all duration-300 flex items-center gap-2"
           >
             <Phone className="h-5 w-5" />

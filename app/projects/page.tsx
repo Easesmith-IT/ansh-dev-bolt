@@ -16,7 +16,7 @@ export default function ProjectsPage() {
   return (
     <main className="min-h-screen bg-white">
       {/* We use a solid background navbar or adapt the existing one as needed */}
-      <div className="bg-[#111111] pb-20">
+      <div className="bg-white text-black! pb-20">
         <Navbar />
       </div>
       

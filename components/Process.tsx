@@ -56,15 +56,15 @@ const Process = () => {
             How We Build Your Dream
           </h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-            A systematic and transparent approach from initial consultation to final handover,
-            ensuring quality at every stage.
+            A systematic and transparent approach from initial consultation to
+            final handover, ensuring quality at every stage.
           </p>
         </motion.div>
 
         <div className="relative">
           <div className="hidden lg:block absolute left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-[#FFC107] to-[#1F7A63] transform -translate-x-1/2" />
 
-          <div className="space-y-16">
+          <div className="space-y-16 hidden md:block">
             {steps.map((step, index) => (
               <motion.div
                 key={index}
@@ -72,9 +72,11 @@ const Process = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8 }}
-                className={`flex flex-col lg:flex-row gap-8 items-center ${
-                  index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'
-                }`}
+                // className={`flex flex-col lg:flex-row gap-8 items-center ${
+                //   index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'
+                // }`}
+                className="flex flex-col lg:flex-row gap-8 items-center"
+                // className="flex flex-row lg:flex-row gap-6 items-start"
               >
                 <div className="flex-1 lg:text-right">
                   {index % 2 === 0 && (
@@ -133,6 +135,82 @@ const Process = () => {
                     </div>
                   )}
                 </div>
+              </motion.div>
+            ))}
+          </div>
+
+          <div className="space-y-16 block md:hidden">
+            {steps.map((step, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8 }}
+                className="flex flex-row lg:flex-row gap-2 items-start"
+              >
+                {/* Step Circle */}
+                <div className="w-16 flex justify-center lg:order-2">
+                  <motion.div
+                    initial={{ scale: 0 }}
+                    whileInView={{ scale: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: 0.3 }}
+                    className="w-12 h-12 rounded-full bg-gradient-to-br from-[#FFC107] to-[#1F7A63] flex items-center justify-center text-white text-xl lg:text-2xl font-bold shadow-2xl"
+                  >
+                    {step.number}
+                  </motion.div>
+                </div>
+
+                {/* LEFT CARD */}
+                {index % 2 === 0 && (
+                  <div className="flex-1 lg:text-right lg:order-1">
+                    <div className="bg-white rounded-xl p-6 lg:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100">
+                      <div className="flex flex-col gap-4">
+                        <motion.div
+                          whileHover={{ scale: 1.1, rotate: 5 }}
+                          className="flex-shrink-0 w-14 h-14 lg:w-16 lg:h-16 rounded-xl bg-gradient-to-br from-[#FFC107] to-[#1F7A63] flex items-center justify-center"
+                        >
+                          <step.icon className="h-7 w-7 text-white" />
+                        </motion.div>
+
+                        <div className="lg:text-right">
+                          <h3 className="text-xl lg:text-2xl font-bold text-[#111111] mb-2">
+                            {step.title}
+                          </h3>
+                          <p className="text-gray-600 leading-relaxed">
+                            {step.description}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                )}
+
+                {/* RIGHT CARD */}
+                {index % 2 !== 0 && (
+                  <div className="flex-1 lg:text-left lg:order-3">
+                    <div className="bg-white rounded-xl p-6 lg:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100">
+                      <div className="flex flex-col gap-4">
+                        <motion.div
+                          whileHover={{ scale: 1.1, rotate: 5 }}
+                          className="flex-shrink-0 w-14 h-14 lg:w-16 lg:h-16 rounded-xl bg-gradient-to-br from-[#FFC107] to-[#1F7A63] flex items-center justify-center"
+                        >
+                          <step.icon className="h-7 w-7 text-white" />
+                        </motion.div>
+
+                        <div>
+                          <h3 className="text-xl lg:text-2xl font-bold text-[#111111] mb-2">
+                            {step.title}
+                          </h3>
+                          <p className="text-gray-600 leading-relaxed">
+                            {step.description}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                )}
               </motion.div>
             ))}
           </div>

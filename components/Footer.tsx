@@ -48,8 +48,8 @@ const Footer = () => {
               <span className="text-2xl font-bold">Ansh Developers</span>
             </div>
             <p className="text-gray-400 mb-6 leading-relaxed">
-              Building excellence since 2008. Your trusted construction partner in Lucknow
-              for residential, commercial, and turnkey projects.
+              Building excellence since 2008. Your trusted construction partner
+              in Lucknow for residential, commercial, and turnkey projects.
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((social, index) => (
@@ -71,7 +71,9 @@ const Footer = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            <h3 className="text-xl font-bold mb-6 text-[#FFC107]">Quick Links</h3>
+            <h3 className="text-xl font-bold mb-6 text-[#FFC107]">
+              Quick Links
+            </h3>
             <ul className="space-y-3">
               {quickLinks.map((link, index) => (
                 <li key={index}>
@@ -92,7 +94,9 @@ const Footer = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <h3 className="text-xl font-bold mb-6 text-[#FFC107]">Our Services</h3>
+            <h3 className="text-xl font-bold mb-6 text-[#FFC107]">
+              Our Services
+            </h3>
             <ul className="space-y-3">
               {services.map((service, index) => (
                 <li key={index}>
@@ -110,23 +114,33 @@ const Footer = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            <h3 className="text-xl font-bold mb-6 text-[#FFC107]">Contact Us</h3>
+            <h3 className="text-xl font-bold mb-6 text-[#FFC107]">
+              Contact Us
+            </h3>
             <ul className="space-y-4">
               <li className="flex items-start gap-3 text-gray-400">
                 <MapPin className="h-5 w-5 text-[#FFC107] flex-shrink-0 mt-1" />
                 <span>
-                  Gomti Nagar, Lucknow,
+                  {/* Gomti Nagar, Lucknow,
                   <br />
-                  Uttar Pradesh, India
+                  Uttar Pradesh, India */}
+                  3/40 vibhav khand gomtinagar
                 </span>
               </li>
               <li className="flex items-center gap-3 text-gray-400 hover:text-[#FFC107] transition-colors">
                 <Phone className="h-5 w-5 text-[#FFC107] flex-shrink-0" />
-                <a href="tel:+919876543210">+91 98765 43210</a>
+                <div className="flex flex-col gap-1">
+                  <a href="tel:+919580171654">9580171654</a>
+                  <a href="tel:+917838035916">7838035916</a>
+                  {/* <a href="tel:+919876543210">+91 98765 43210</a> */}
+                </div>
               </li>
               <li className="flex items-center gap-3 text-gray-400 hover:text-[#FFC107] transition-colors">
                 <Mail className="h-5 w-5 text-[#FFC107] flex-shrink-0" />
-                <a href="mailto:info@anshdevelopers.com">info@anshdevelopers.com</a>
+                <a href="mailto:anilpandey293@gmail.com">
+                  {/* info@anshdevelopers.com */}
+                  anilpandey293@gmail.com
+                </a>
               </li>
             </ul>
           </motion.div>
@@ -140,8 +154,11 @@ const Footer = () => {
           className="border-t border-white/10 pt-8 text-center"
         >
           <p className="text-gray-400">
-            &copy; {new Date().getFullYear()} Ansh Developers. All rights reserved. |{' '}
-            <span className="text-[#FFC107]">Building Dreams, Creating Realities</span>
+            &copy; {new Date().getFullYear()} Ansh Developers. All rights
+            reserved. |{" "}
+            <span className="text-[#FFC107]">
+              Building Dreams, Creating Realities
+            </span>
           </p>
         </motion.div>
       </div>

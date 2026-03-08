@@ -41,7 +41,7 @@ export default function ProjectDetail() {
       </div>
 
       {/* 1. Project Hero Section */}
-      <section className="relative h-[70vh] md:h-[80vh] flex items-end pb-24 overflow-hidden pt-20">
+      <section className="relative sm:h-[70vh] md:h-[80vh] flex items-end pb-24 overflow-hidden pt-20">
         <motion.div 
           initial={{ scale: 1.1 }}
           animate={{ scale: 1 }}

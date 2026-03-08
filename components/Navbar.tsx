@@ -29,7 +29,7 @@ const Navbar = () => {
     { name: 'Home', id: 'hero' },
     { name: 'About', id: 'about' },
     { name: 'Services', id: 'services' },
-    { name: 'Portfolio', id: 'portfolio' },
+    { name: 'Our Projects', id: 'projects', href: '/projects' },
     { name: 'Process', id: 'process' },
   ];
 
@@ -66,15 +66,27 @@ const Navbar = () => {
 
           <div className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
-              <button
-                key={link.id}
-                onClick={() => scrollToSection(link.id)}
-                className={`font-medium transition-colors hover:text-[#FFC107] ${
-                  isScrolled ? 'text-[#111111]' : 'text-white'
-                }`}
-              >
-                {link.name}
-              </button>
+              link.href ? (
+                <Link
+                  href={link.href}
+                  key={link.id}
+                  className={`font-medium transition-colors hover:text-[#FFC107] ${
+                    isScrolled ? 'text-[#111111]' : 'text-white'
+                  }`}
+                >
+                  {link.name}
+                </Link>
+              ) : (
+                <button
+                  key={link.id}
+                  onClick={() => scrollToSection(link.id)}
+                  className={`font-medium transition-colors hover:text-[#FFC107] ${
+                    isScrolled ? 'text-[#111111]' : 'text-white'
+                  }`}
+                >
+                  {link.name}
+                </button>
+              )
             ))}
             <button
               onClick={() => scrollToSection('contact')}
@@ -114,13 +126,24 @@ const Navbar = () => {
         >
           <div className="px-4 py-6 space-y-4">
             {navLinks.map((link) => (
-              <button
-                key={link.id}
-                onClick={() => scrollToSection(link.id)}
-                className="block w-full text-left text-[#111111] font-medium py-2 hover:text-[#FFC107]"
-              >
-                {link.name}
-              </button>
+              link.href ? (
+                <Link
+                  href={link.href}
+                  key={link.id}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="block w-full text-left text-[#111111] font-medium py-2 hover:text-[#FFC107]"
+                >
+                  {link.name}
+                </Link>
+              ) : (
+                <button
+                  key={link.id}
+                  onClick={() => scrollToSection(link.id)}
+                  className="block w-full text-left text-[#111111] font-medium py-2 hover:text-[#FFC107]"
+                >
+                  {link.name}
+                </button>
+              )
             ))}
             <button
               onClick={() => scrollToSection('contact')}

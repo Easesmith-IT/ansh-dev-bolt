@@ -220,13 +220,13 @@ export const projectsData = [
     developer: "Ansh Developers",
     startDate: "",
     completionDate: "",
-    image: "/projects/project1/1.jpeg",
+    image: "/projects/project1/p1.jpeg",
     gallery: [
-      "/projects/project1/1.jpeg",
+      "/projects/project1/p1.jpeg",
       "/projects/project1/2.jpeg",
-      "/projects/project1/3.jpeg",
+      "/projects/project1/p2.jpeg",
       "/projects/project1/4.jpeg",
-      "/projects/project1/5.jpeg",
+      "/projects/project1/p3.jpeg",
     ],
     description: `This project involved the development of a complete tower section within the HCL IT City
 campus located in Lucknow. The project focused on constructing a modern corporate office

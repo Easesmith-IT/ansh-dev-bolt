@@ -1,14 +1,14 @@
 'use client';
 
-import { useState } from 'react';
-import { useParams } from 'next/navigation';
-import { projectsData } from '@/lib/data/projects';
-import { motion, AnimatePresence } from 'framer-motion';
-import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import Navbar from '@/components/Navbar';
 import ProjectCTA from '@/components/projects/ProjectCTA';
+import { projectsData } from '@/lib/data/projects';
+import { AnimatePresence, motion } from 'framer-motion';
+import { ArrowLeft, ArrowRight, Building, BuildingIcon, CircleCheck, ClipboardList, LayersIcon, MapPin, Maximize, RulerIcon, Target, Wrench, X } from 'lucide-react';
 import Link from 'next/link';
-import { ArrowLeft, MapPin, Building, Calendar, Maximize, Target, Wrench, X, Play, ArrowRight, CheckCircle2 } from 'lucide-react';
+import { useParams } from 'next/navigation';
+import { useState } from 'react';
 
 export default function ProjectDetail() {
   const { id } = useParams();
@@ -36,13 +36,13 @@ export default function ProjectDetail() {
 
   return (
     <main className="min-h-screen bg-[#f8f9fa] selection:bg-[#FFC107] selection:text-[#111111]">
-      <div className="bg-[#111111]">
-        <Navbar />
-      </div>
+      {/* <div className="bg-[#111111]"> */}
+      <Navbar />
+      {/* </div> */}
 
       {/* 1. Project Hero Section */}
       <section className="relative sm:h-[70vh] md:h-[80vh] flex items-end pb-24 overflow-hidden pt-20">
-        <motion.div 
+        <motion.div
           initial={{ scale: 1.1 }}
           animate={{ scale: 1 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
@@ -53,13 +53,14 @@ export default function ProjectDetail() {
         </motion.div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-          <Link 
+          <Link
             href="/projects"
             className="inline-flex items-center text-white/80 hover:text-[#FFC107] mb-8 font-medium transition-colors group"
           >
-            <ArrowLeft className="w-5 h-5 mr-2 transform group-hover:-translate-x-1 transition-transform" /> Back to Portfolio
+            <ArrowLeft className="w-5 h-5 mr-2 transform group-hover:-translate-x-1 transition-transform" />{" "}
+            Back to Portfolio
           </Link>
-          
+
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -83,10 +84,8 @@ export default function ProjectDetail() {
       {/* Main Content Layout */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
-          
           {/* Main Left Column (Overview & Work Undertaken) */}
           <div className="lg:col-span-8 space-y-20">
-            
             {/* 2. Project Overview Section */}
             <motion.section
               initial={{ opacity: 0, y: 20 }}
@@ -114,17 +113,24 @@ export default function ProjectDetail() {
                 <span className="w-8 h-1 bg-[#1F7A63] mr-4 block"></span>
                 Work Undertaken
               </h2>
-              
+
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {project.workUndertaken.map((work, idx) => (
-                  <div key={idx} className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                  <div
+                    key={idx}
+                    className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+                  >
                     <div className="flex items-start">
                       <div className="bg-[#FFC107]/20 p-3 rounded-lg mr-4 mt-1">
                         <Wrench className="w-6 h-6 text-[#FFC107]" />
                       </div>
                       <div>
-                        <h4 className="text-lg font-bold text-[#111111] mb-2">{work.title}</h4>
-                        <p className="text-gray-600 leading-relaxed">{work.desc}</p>
+                        {/* <h4 className="text-lg font-bold text-[#111111] mb-2">
+                          {work.title}
+                        </h4> */}
+                        <p className="text-gray-600 leading-relaxed">
+                          {work.desc}
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -143,10 +149,10 @@ export default function ProjectDetail() {
                 <span className="w-8 h-1 bg-[#111111] mr-4 block"></span>
                 Project Gallery
               </h2>
-              
+
               <div className="columns-1 md:columns-2 gap-6 space-y-6">
                 {project.gallery.map((img, idx) => (
-                  <div 
+                  <div
                     key={idx}
                     className="relative group overflow-hidden rounded-xl cursor-pointer break-inside-avoid shadow-sm"
                     onClick={() => setSelectedImage(img)}
@@ -154,9 +160,9 @@ export default function ProjectDetail() {
                     <div className="absolute inset-0 bg-[#111111]/0 group-hover:bg-[#111111]/40 transition-colors duration-300 z-10 flex items-center justify-center">
                       <Maximize className="text-white opacity-0 group-hover:opacity-100 transform scale-50 group-hover:scale-100 transition-all duration-300 w-10 h-10" />
                     </div>
-                    <img 
-                      src={img} 
-                      alt={`${project.title} - Gallery ${idx + 1}`} 
+                    <img
+                      src={img}
+                      alt={`${project.title} - Gallery ${idx + 1}`}
                       className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700"
                       loading="lazy"
                     />
@@ -177,82 +183,115 @@ export default function ProjectDetail() {
                   <span className="w-8 h-1 bg-[#FFC107] mr-4 block"></span>
                   Project Walkthrough Video
                 </h2>
-                
+
                 <div className="relative pt-[56.25%] rounded-2xl overflow-hidden shadow-xl bg-gray-900 border-4 border-white">
-                  <iframe 
+                  <iframe
                     className="absolute inset-0 w-full h-full"
-                    src={project.videoUrl} 
+                    src={project.videoUrl}
                     title={`${project.title} Walkthrough`}
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                   ></iframe>
                 </div>
               </motion.section>
             )}
-
           </div>
 
           {/* Right Sidebar Column (Project Info Box) */}
           <div className="lg:col-span-4 lg:sticky lg:top-28 self-start space-y-8">
-            
             {/* 3. Project Information Section */}
             <div className="bg-white p-8 rounded-2xl shadow-xl border-t-4 border-[#FFC107]">
-              <h3 className="text-2xl font-bold text-[#111111] mb-8">Project Information</h3>
-              
+              <h3 className="text-2xl font-bold text-[#111111] mb-8">
+                Project Information
+              </h3>
+
               <div className="space-y-6">
-                <div className="flex flex-col border-b border-gray-100 pb-4">
-                  <span className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-1">Client / Owner</span>
+               {project.client && <div className="flex flex-col border-b border-gray-100 pb-4">
+                  <span className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-1">
+                    Client / Owner
+                  </span>
                   <div className="flex items-center text-[#111111] font-bold text-lg">
-                    <Target className="w-5 h-5 text-[#1F7A63] mr-3" /> {project.client}
+                    <Target className="w-5 h-5 text-[#1F7A63] mr-3" />{" "}
+                    {project.client}
+                  </div>
+                </div>}
+
+                <div className="flex flex-col border-b border-gray-100 pb-4">
+                  <span className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-1">
+                    Developer
+                  </span>
+                  <div className="flex items-center text-[#111111] font-bold text-lg">
+                    <BuildingIcon className="w-5 h-5 text-[#1F7A63] mr-3" />{" "}
+                    {project.developer}
                   </div>
                 </div>
 
                 <div className="flex flex-col border-b border-gray-100 pb-4">
-                  <span className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-1">Project Type</span>
+                  <span className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-1">
+                    Project Type
+                  </span>
                   <div className="flex items-center text-[#111111] font-bold text-lg">
-                    <Building className="w-5 h-5 text-[#1F7A63] mr-3" /> {project.category}
+                    <LayersIcon className="w-5 h-5 text-[#1F7A63] mr-3" />{" "}
+                    {project.category}
                   </div>
                 </div>
 
                 <div className="flex flex-col border-b border-gray-100 pb-4">
-                  <span className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-1">Location</span>
+                  <span className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-1">
+                    Location
+                  </span>
                   <div className="flex items-center text-[#111111] font-bold text-lg">
-                    <MapPin className="w-5 h-5 text-[#1F7A63] mr-3" /> {project.location}
+                    <MapPin className="w-5 h-5 text-[#1F7A63] mr-3" />{" "}
+                    {project.location}
                   </div>
                 </div>
 
-                <div className="grid grid-cols-2 gap-4 border-b border-gray-100 pb-4">
-                  <div className="flex flex-col">
-                    <span className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-1">Start Date</span>
-                    <div className="flex items-center text-[#111111] font-bold">
-                      <Calendar className="w-4 h-4 text-[#1F7A63] mr-2" /> {project.startDate}
+                <div className="flex flex-col border-b border-gray-100 pb-4">
+                  <span className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-1">
+                    Project Scope
+                  </span>
+                  <div className="flex items-center text-[#111111] font-bold text-lg">
+                    <ClipboardList className="w-5 h-5 text-[#1F7A63] mr-3 shrink-0" />{" "}
+                    {project.scope}
+                  </div>
+                </div>
+                {project.projectLength && (
+                  <div className="flex flex-col border-b border-gray-100 pb-4">
+                    <span className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-1">
+                      Project Length
+                    </span>
+                    <div className="flex items-center text-[#111111] font-bold text-lg">
+                      <RulerIcon className="w-5 h-5 text-[#1F7A63] mr-3 shrink-0" />{" "}
+                      {project.projectLength}
                     </div>
                   </div>
-                  <div className="flex flex-col">
-                    <span className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-1">Completion</span>
-                    <div className="flex items-center text-[#111111] font-bold">
-                      <CheckCircle2 className="w-4 h-4 text-[#1F7A63] mr-2" /> {project.completionDate}
-                    </div>
-                  </div>
-                </div>
+                )}
 
                 <div className="flex flex-col border-b border-gray-100 pb-4">
-                  <span className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-1">Total Area</span>
+                  <span className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-1">
+                    Status
+                  </span>
                   <div className="flex items-center text-[#111111] font-bold text-lg">
-                    <Maximize className="w-5 h-5 text-[#1F7A63] mr-3" /> {project.totalArea}
+                    <CircleCheck className="w-5 h-5 text-[#1F7A63] mr-3" />{" "}
+                    {project.status}
                   </div>
                 </div>
 
-                <div className="flex flex-col pt-2">
-                  <span className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-3">Services Provided</span>
+                {/* <div className="flex flex-col pt-2">
+                  <span className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-3">
+                    Services Provided
+                  </span>
                   <div className="flex flex-wrap gap-2">
                     {project.servicesProvided.map((service, idx) => (
-                      <span key={idx} className="bg-[#f8f9fa] border border-gray-200 text-[#111111] px-3 py-1.5 rounded-md text-sm font-bold">
+                      <span
+                        key={idx}
+                        className="bg-[#f8f9fa] border border-gray-200 text-[#111111] px-3 py-1.5 rounded-md text-sm font-bold"
+                      >
                         {service}
                       </span>
                     ))}
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
 
@@ -260,18 +299,17 @@ export default function ProjectDetail() {
             <div className="bg-[#111111] p-8 rounded-2xl shadow-xl text-white">
               <h4 className="text-xl font-bold mb-6 flex items-center">
                 <span className="w-4 h-4 bg-[#FFC107] mr-3"></span>
-                Key Materials
+                Project Highlights
               </h4>
               <ul className="space-y-3">
-                {project.materials.map((material, idx) => (
+                {project.projectHighlights.map((highlight, idx) => (
                   <li key={idx} className="flex items-center text-gray-300">
                     <div className="w-1.5 h-1.5 rounded-full bg-[#1F7A63] mr-3"></div>
-                    {material}
+                    {highlight}
                   </li>
                 ))}
               </ul>
             </div>
-
           </div>
         </div>
       </div>
@@ -281,10 +319,17 @@ export default function ProjectDetail() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-end mb-12">
             <div>
-              <h2 className="text-4xl font-bold text-[#111111] mb-4">Related Projects</h2>
-              <p className="text-gray-600 text-lg">Explore similar construction masterpieces.</p>
+              <h2 className="text-4xl font-bold text-[#111111] mb-4">
+                Related Projects
+              </h2>
+              <p className="text-gray-600 text-lg">
+                Explore similar construction masterpieces.
+              </p>
             </div>
-            <Link href="/projects" className="hidden md:flex items-center text-[#1F7A63] font-bold hover:text-[#111111] transition-colors">
+            <Link
+              href="/projects"
+              className="hidden md:flex items-center text-[#1F7A63] font-bold hover:text-[#111111] transition-colors"
+            >
               View All Projects <ArrowRight className="ml-2 w-5 h-5" />
             </Link>
           </div>
@@ -301,22 +346,28 @@ export default function ProjectDetail() {
                 >
                   <div className="relative h-64 overflow-hidden rounded-xl mb-4">
                     <div className="absolute inset-0 bg-[#111111]/20 group-hover:bg-transparent transition-colors duration-300 z-10" />
-                    <img 
-                      src={rp.image} 
-                      alt={rp.title} 
+                    <img
+                      src={rp.image}
+                      alt={rp.title}
                       className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-in-out"
                     />
                   </div>
-                  <h3 className="text-xl font-bold text-[#111111] group-hover:text-[#1F7A63] transition-colors mb-1">{rp.title}</h3>
+                  <h3 className="text-xl font-bold text-[#111111] group-hover:text-[#1F7A63] transition-colors mb-1">
+                    {rp.title}
+                  </h3>
                   <div className="flex items-center text-sm text-gray-500 font-medium">
-                    <MapPin className="w-4 h-4 mr-1 text-[#FFC107]" /> {rp.location}
+                    <MapPin className="w-4 h-4 mr-1 text-[#FFC107]" />{" "}
+                    {rp.location}
                   </div>
                 </motion.div>
               </Link>
             ))}
           </div>
           <div className="mt-8 text-center md:hidden">
-            <Link href="/projects" className="inline-flex items-center text-[#1F7A63] font-bold border border-[#1F7A63] px-6 py-3 rounded-md">
+            <Link
+              href="/projects"
+              className="inline-flex items-center text-[#1F7A63] font-bold border border-[#1F7A63] px-6 py-3 rounded-md"
+            >
               View All Projects <ArrowRight className="ml-2 w-5 h-5" />
             </Link>
           </div>
@@ -325,20 +376,20 @@ export default function ProjectDetail() {
 
       {/* 8. Call To Action */}
       <ProjectCTA />
-      
+
       <Footer />
 
       {/* Lightbox Modal */}
       <AnimatePresence>
         {selectedImage && (
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             className="fixed inset-0 z-[100] flex items-center justify-center bg-[#111111]/95 backdrop-blur-md p-4 sm:p-8"
             onClick={() => setSelectedImage(null)}
           >
-            <button 
+            <button
               className="absolute top-6 right-6 text-white hover:text-[#FFC107] transition-colors z-[101]"
               onClick={() => setSelectedImage(null)}
             >
@@ -357,7 +408,6 @@ export default function ProjectDetail() {
           </motion.div>
         )}
       </AnimatePresence>
-
     </main>
   );
 }

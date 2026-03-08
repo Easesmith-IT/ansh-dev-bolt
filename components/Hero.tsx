@@ -14,7 +14,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="relative md:h-screen mt-5 md:mt-16 flex items-center justify-center overflow-hidden"
+      className="relative md:h-screen flex items-center justify-center overflow-hidden"
     >
       <div
         className="absolute inset-0 z-0"

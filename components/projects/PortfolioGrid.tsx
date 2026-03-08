@@ -87,10 +87,10 @@ const PortfolioGrid = () => {
                       <Building className="w-4 h-4 mr-2 text-[#FFC107]" />
                       {project.category}
                     </div>
-                    <div className="flex items-center text-gray-600 text-sm">
+                    {/* <div className="flex items-center text-gray-600 text-sm">
                       <Calendar className="w-4 h-4 mr-2 text-[#FFC107]" />
                       {project.year}
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </motion.div>

@@ -81,10 +81,10 @@ const FeaturedProjects = () => {
                     <MapPin className="w-5 h-5 mr-3 text-[#1F7A63]" />
                     {project.location}
                   </div>
-                  <div className="flex items-center text-[#111111] font-medium">
+                  {/* <div className="flex items-center text-[#111111] font-medium">
                     <Maximize className="w-5 h-5 mr-3 text-[#1F7A63]" />
                     {project.totalArea}
-                  </div>
+                  </div> */}
                 </div>
 
                 <Link

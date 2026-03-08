@@ -308,11 +308,11 @@ company’s capability to execute large-scale premium civil and infrastructure d
     status: "Completed",
     materials: [],
     projectHighlights: [
-      "Development within HCL IT City technology campus",
-      "Construction of a complete office tower section",
-      "Large-scale corporate infrastructure project",
-      "Modern office building architecture",
-      "Construction executed according to commercial building standards",
+      "One of the premium infrastructure projects by Ansh Developers",
+      "Development of 1.2 km road infrastructure stretch",
+      "4-lane underpass road construction",
+      "Strategic location near Delhi Airport corridor",
+      "Executed with high engineering and durability standards",
     ],
     workUndertaken: [
       {
@@ -335,6 +335,287 @@ company’s capability to execute large-scale premium civil and infrastructure d
       },
       {
         desc: "Final structural finishing and road quality inspection.",
+      },
+    ],
+  },
+  {
+    id: "gulmohar-society-residence",
+    title: "Residential Property Development – Gulmohar Society",
+    tagline: "Modern Residential Construction",
+    location: "Gulmohar Society, Lucknow, Uttar Pradesh",
+    category: "Residential Projects",
+    year: null,
+    startDate: "",
+    completionDate: "",
+    projectHighlights:[],
+    image:
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80",
+    gallery: [],
+    description:
+      "Modern residential property developed with contemporary architecture, efficient layout planning, and durable construction standards. Built on a 1250 sq ft plot with spacious balconies, decorative lighting, and high-quality finishing.",
+    totalArea: "1250 sq ft",
+    materials: [],
+    client: "Private Residential Client",
+    servicesProvided: [
+      "Architectural Planning",
+      "Structural Construction",
+      "Interior Finishing",
+      "Exterior Development",
+    ],
+    workUndertaken: [
+      {
+        title: "Architectural Planning",
+        desc: "Residential layout design ensuring efficient space utilization.",
+      },
+      {
+        title: "Foundation Construction",
+        desc: "Site preparation and structural foundation development.",
+      },
+      {
+        title: "RCC Structural Framework",
+        desc: "Reinforced concrete structural framework construction.",
+      },
+      {
+        title: "Electrical & Plumbing",
+        desc: "Complete electrical wiring and plumbing installations.",
+      },
+      {
+        title: "Exterior Elevation",
+        desc: "Stone cladding façade with modern balcony railings.",
+      },
+      {
+        title: "Final Finishing",
+        desc: "Interior plastering, flooring, lighting, and final inspection.",
+      },
+    ],
+  },
+
+  {
+    id: "madhav-green-society-duplex",
+    title: "Residential Property Development – Madhav Green Society",
+    tagline: "Modern Duplex Residential Home",
+    location: "Madhav Green Society, Lucknow, Uttar Pradesh",
+    category: "Residential Projects",
+    year: null,
+    startDate: "",
+    completionDate: "",
+    image:
+      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
+    gallery: [],
+    description:
+      "Modern duplex residential house developed with elegant architecture, symmetrical elevation design, and spacious balconies. Built with high construction standards ensuring comfortable urban living.",
+    totalArea: "2000 sq ft",
+    materials: [],
+    client: "Private Residential Client",
+    servicesProvided: [
+      "Architectural Planning",
+      "Structural Construction",
+      "Interior & Exterior Finishing",
+    ],
+    workUndertaken: [
+      {
+        title: "Planning & Layout",
+        desc: "Architectural planning and residential layout design.",
+      },
+      {
+        title: "Foundation Development",
+        desc: "Excavation and structural foundation construction.",
+      },
+      {
+        title: "RCC Framework",
+        desc: "Reinforced concrete structural framework development.",
+      },
+      {
+        title: "Balcony Construction",
+        desc: "Balcony structures with decorative railing design.",
+      },
+      {
+        title: "Interior Finishing",
+        desc: "Flooring, plastering, and wall finishing.",
+      },
+      {
+        title: "Exterior Elevation",
+        desc: "Modern façade finishing with premium exterior lighting.",
+      },
+    ],
+  },
+
+  {
+    id: "omaxe-heights-maintenance",
+    title: "Building Maintenance Work – Omaxe Heights",
+    tagline: "Residential Apartment Maintenance",
+    location: "Lucknow, Uttar Pradesh",
+    category: "Maintenance Projects",
+    year: null,
+    startDate: "",
+    completionDate: "",
+    image:
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1600&q=80",
+    gallery: [],
+    description:
+      "Professional building maintenance and repair work executed for a premium residential apartment society to ensure structural durability, infrastructure upkeep, and aesthetic quality.",
+    totalArea: "",
+    materials: [],
+    client: "Omaxe",
+    servicesProvided: [
+      "Structural Maintenance",
+      "Infrastructure Repair",
+      "Exterior Maintenance",
+    ],
+    workUndertaken: [
+      {
+        title: "Structural Inspection",
+        desc: "Inspection and repair of building structural components.",
+      },
+      {
+        title: "Exterior Maintenance",
+        desc: "Repair and improvement of exterior finishing.",
+      },
+      {
+        title: "Plumbing Maintenance",
+        desc: "Servicing and maintenance of plumbing systems.",
+      },
+      {
+        title: "Common Area Repair",
+        desc: "Maintenance of shared infrastructure and facilities.",
+      },
+      {
+        title: "Lighting Checks",
+        desc: "Exterior lighting system inspection and repair.",
+      },
+    ],
+  },
+
+  {
+    id: "gomti-hatchery-infrastructure",
+    title: "Infrastructure Development – Gomti Hatchery",
+    tagline: "Government Infrastructure Project",
+    location: "Lucknow, Uttar Pradesh",
+    category: "Government Projects",
+    year: null,
+    startDate: "",
+    completionDate: "",
+    image:
+      "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1600&q=80",
+    gallery: [],
+    description:
+      "Infrastructure development work executed for the Uttar Pradesh Fisheries Department to improve hatchery campus facilities and structural infrastructure.",
+    totalArea: "",
+    materials: [],
+    client: "Uttar Pradesh Matsya (Fisheries) Department",
+    servicesProvided: [
+      "Infrastructure Construction",
+      "Facility Development",
+      "Campus Improvement",
+    ],
+    workUndertaken: [
+      {
+        title: "Entrance Infrastructure",
+        desc: "Development of entrance structural elements.",
+      },
+      {
+        title: "Facility Construction",
+        desc: "Construction and improvement of hatchery facility buildings.",
+      },
+      {
+        title: "Campus Development",
+        desc: "General campus infrastructure development.",
+      },
+      {
+        title: "Structural Finishing",
+        desc: "Exterior finishing and structural improvements.",
+      },
+    ],
+  },
+
+  {
+    id: "govardhan-enclave-residential",
+    title: "Residential Building Development – Govardhan Enclave",
+    tagline: "Government Housing Scheme Construction",
+    location: "Vrindavan Awas Yojana, Lucknow, Uttar Pradesh",
+    category: "Government Projects",
+    year: null,
+    startDate: "",
+    completionDate: "",
+    image:
+      "https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?auto=format&fit=crop&w=1600&q=80",
+    gallery: [],
+    description:
+      "Residential building construction executed under the Uttar Pradesh Government housing scheme at Vrindavan Awas Yojana, developed according to approved architectural plans.",
+    totalArea: "",
+    materials: [],
+    client: "Uttar Pradesh Government Housing Scheme",
+    servicesProvided: [
+      "Residential Building Construction",
+      "Structural Development",
+      "Government Housing Infrastructure",
+    ],
+    workUndertaken: [
+      {
+        title: "Site Preparation",
+        desc: "Excavation and groundwork preparation.",
+      },
+      {
+        title: "Foundation Construction",
+        desc: "Foundation and structural framework development.",
+      },
+      {
+        title: "RCC Structure",
+        desc: "Reinforced concrete structural development.",
+      },
+      {
+        title: "Electrical & Plumbing",
+        desc: "Infrastructure installation for utilities.",
+      },
+      {
+        title: "Exterior Finishing",
+        desc: "Exterior finishing and structural detailing.",
+      },
+    ],
+  },
+
+  {
+    id: "mi-rustle-court-apartment",
+    title: "Building Construction – MI Rustle Court Apartment",
+    tagline: "Premium Residential Apartment Construction",
+    location: "Lucknow, Uttar Pradesh",
+    category: "Residential Projects",
+    year: null,
+    startDate: "",
+    completionDate: "",
+    image:
+      "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?auto=format&fit=crop&w=1600&q=80",
+    gallery: [],
+    description:
+      "Construction of a residential apartment building within the MI Rustle Court premium housing society, focusing on structural durability and modern residential infrastructure.",
+    totalArea: "",
+    materials: [],
+    client: "",
+    servicesProvided: [
+      "Apartment Construction",
+      "Structural Development",
+      "Residential Infrastructure",
+    ],
+    workUndertaken: [
+      {
+        title: "Foundation Work",
+        desc: "Site preparation and building foundation development.",
+      },
+      {
+        title: "RCC Structural Framework",
+        desc: "Reinforced concrete structure construction.",
+      },
+      {
+        title: "Building Structure",
+        desc: "Full building structural development.",
+      },
+      {
+        title: "Brickwork & Finishing",
+        desc: "Wall construction, plastering, and finishing.",
+      },
+      {
+        title: "Final Structural Completion",
+        desc: "Inspection and structural alignment finishing.",
       },
     ],
   },

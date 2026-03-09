@@ -46,6 +46,7 @@ const Footer = () => {
             <div className="flex items-center space-x-3 mb-6">
               <Building2 className="h-8 w-8 text-[#FFC107]" />
               <span className="text-2xl font-bold">Ansh Developers</span>
+
             </div>
             <p className="text-gray-400 mb-6 leading-relaxed">
               Building excellence since 2008. Your trusted construction partner

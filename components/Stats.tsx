@@ -32,25 +32,25 @@ const Stats = () => {
   const stats = [
     {
       icon: Building2,
-      value: 150,
+      value: 50,
       label: 'Projects Completed',
       suffix: '+',
     },
     {
       icon: Award,
-      value: 15,
+      value: 10,
       label: 'Years of Experience',
       suffix: '+',
     },
     {
       icon: Users,
-      value: 500,
+      value: 100,
       label: 'Happy Clients',
       suffix: '+',
     },
     {
       icon: Briefcase,
-      value: 50,
+      value: 150,
       label: 'Construction Experts',
       suffix: '+',
     },

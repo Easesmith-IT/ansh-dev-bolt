@@ -341,18 +341,39 @@ company’s capability to execute large-scale premium civil and infrastructure d
   {
     id: "gulmohar-society-residence",
     title: "Residential Property Development – Gulmohar Society",
-    tagline: "Modern Residential Construction",
+    tagline: `Modern residential property developed with contemporary architecture, efficient layout 
+planning, and durable construction standards.`,
     location: "Gulmohar Society, Lucknow, Uttar Pradesh",
     category: "Residential Projects",
     year: null,
     startDate: "",
     completionDate: "",
-    projectHighlights: [],
+    projectHighlights: [
+      "Contemporary modern elevation design",
+      "Decorative stone cladding façade",
+      "Spacious balcony with modern railing design",
+      "Premium exterior lighting",
+      "Modern entrance gate and boundary wall",
+      "Efficient residential space planning"
+    ],
     image:
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80",
-    gallery: [],
+      "/projects/gulmohar-society-proj/gulmoharimg1.jpeg",
+    gallery: [
+      "/projects/gulmohar-society-proj/gulmoharimg1.jpeg"
+    ],
     description:
-      "Modern residential property developed with contemporary architecture, efficient layout planning, and durable construction standards. Built on a 1250 sq ft plot with spacious balconies, decorative lighting, and high-quality finishing.",
+      `This project involved the complete development of a residential house located in 
+Gulmohar Society, Lucknow.The property was constructed from the initial planning stage 
+to the final construction and finishing phase. 
+The goal of the project was to build a modern and comfortable residential home that 
+combines architectural aesthetics with strong structural quality.The design features a 
+contemporary façade, spacious balconies, decorative exterior lighting, and modern material 
+f
+inishes. 
+The house was developed on a 1250 sq ft plot, ensuring optimal space utilization while 
+maintaining an elegant and functional residential layout suitable for urban living in Lucknow. 
+The project reflects Ansh Developers’ commitment to quality construction, attention to 
+detail, and modern residential design standards.`,
     totalArea: "1250 sq ft",
     materials: [],
     client: "Private Residential Client",
@@ -393,18 +414,38 @@ company’s capability to execute large-scale premium civil and infrastructure d
   {
     id: "madhav-green-society-duplex",
     title: "Residential Property Development – Madhav Green Society",
-    tagline: "Modern Duplex Residential Home",
+    tagline: `A modern residential duplex developed with elegant architectural design, functional 
+planning, and high-quality construction standards.`,
+
     location: "Madhav Green Society, Lucknow, Uttar Pradesh",
     category: "Residential Projects",
-    projectHighlights: [],
+    projectHighlights: [
+      "Elegant modern duplex elevation",
+      "Decorative balcony railing design",
+      "Symmetrical front façade architecture",
+      "Spacious balcony areas for outdoor use",
+      "Premium exterior lighting and wall finish",
+      "Functional residential layout for family living"
+    ],
     year: null,
     startDate: "",
     completionDate: "",
     image:
-      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
-    gallery: [],
+      "/projects/madhav-green-proj/madhavgreenimg1.jpeg",
+    gallery: [
+      "/projects/madhav-green-proj/madhavgreenimg1.jpeg",
+    ],
     description:
-      "Modern duplex residential house developed with elegant architecture, symmetrical elevation design, and spacious balconies. Built with high construction standards ensuring comfortable urban living.",
+      `This project involved the complete construction and development of a residential property
+located in Madhav Green Society, Lucknow. The house was built from the initial planning
+stage through structural development and final finishing.
+The design of the property reflects a modern residential architecture with balanced
+symmetry, decorative balcony railings, and spacious outdoor areas. The home was planned
+to provide comfortable family living while maintaining a visually appealing exterior elevation.
+Constructed on a 2000 sq ft area, the residence focuses on efficient space utilization, strong
+structural integrity, and aesthetic finishing. The project demonstrates Ansh Developers’
+expertise in delivering modern residential homes that combine durability with elegant
+architectural design. `,
     totalArea: "2000 sq ft",
     materials: [],
     client: "Private Residential Client",
@@ -444,18 +485,37 @@ company’s capability to execute large-scale premium civil and infrastructure d
   {
     id: "omaxe-heights-maintenance",
     title: "Building Maintenance Work – Omaxe Heights",
-    tagline: "Residential Apartment Maintenance",
+    tagline: `Professional maintenance and structural upkeep work carried out for a premium residential 
+apartment society in Lucknow.`,
     location: "Lucknow, Uttar Pradesh",
     category: "Maintenance Projects",
     year: null,
     startDate: "",
     completionDate: "",
-    projectHighlights: [],
-    image:
-      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1600&q=80",
-    gallery: [],
+    projectHighlights: [
+      "Maintenance work for a premium residential apartment society",
+      "Large-scale residential complex infrastructure",
+      "Focus on structural durability and resident safety",
+      "Professional maintenance executed with minimal disruption",
+      "High-quality repair and finishing standards"
+    ],
+
+    image: "/projects/omaxe-heights-proj/omaxeimg1.jpeg",
+    gallery: [
+      "/projects/omaxe-heights-proj/omaxeimg1.jpeg",
+      "/projects/omaxe-heights-proj/omaxeimg2.jpeg",
+    ],
     description:
-      "Professional building maintenance and repair work executed for a premium residential apartment society to ensure structural durability, infrastructure upkeep, and aesthetic quality.",
+      `This project involved maintenance and building upkeep work at Omaxe Heights, a premium
+residential apartment society located in Lucknow. The maintenance work was carried out
+to ensure the long-term structural durability, functionality, and aesthetic quality of the
+residential complex.
+Omaxe Heights is a large multi-tower residential development, and regular maintenance is
+essential for preserving the infrastructure and ensuring comfortable living for residents.
+Ansh Developers was entrusted with executing the required maintenance activities to
+maintain the building’s structural integrity and exterior appearance.
+The work was completed with a focus on quality standards, safety measures, and minimal
+disruption to residents within the society.`,
     totalArea: "",
     materials: [],
     client: "Omaxe",
@@ -491,18 +551,39 @@ company’s capability to execute large-scale premium civil and infrastructure d
   {
     id: "gomti-hatchery-infrastructure",
     title: "Infrastructure Development – Gomti Hatchery",
-    tagline: "Government Infrastructure Project",
+    tagline: `Infrastructure and building development work executed for the Fisheries Department of 
+Uttar Pradesh.`,
     location: "Lucknow, Uttar Pradesh",
     category: "Government Projects",
-    projectHighlights: [],
+    projectHighlights: [
+      "Government infrastructure development project",
+      "Work executed for Uttar Pradesh Fisheries Department",
+      "Improvement of hatchery facility infrastructure",
+      "Institutional campus development",
+      "Durable construction following government standards"
+    ],
     year: null,
     startDate: "",
     completionDate: "",
-    image:
-      "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1600&q=80",
-    gallery: [],
+    image: "/projects/gomti-hatchery-proj/gomtimg1.jpeg",
+    gallery: [
+      "/projects/gomti-hatchery-proj/gomtimg1.jpeg",
+      "/projects/gomti-hatchery-proj/gomtiimg2.jpeg",
+
+    ],
     description:
-      "Infrastructure development work executed for the Uttar Pradesh Fisheries Department to improve hatchery campus facilities and structural infrastructure.",
+      `This project involved infrastructure development and construction work at the Gomti
+Hatchery facility in Lucknow, which operates under the Uttar Pradesh Matsya (Fisheries)
+Department.
+The work focused on improving and developing the institutional infrastructure of the
+hatchery campus, including structural development and facility improvements. Hatchery
+facilities play an important role in fish breeding, aquaculture development, and fisheries
+management within the state.
+Ansh Developers contributed to the development and enhancement of the hatchery
+infrastructure, ensuring that the construction work met government standards, durability
+requirements, and functional needs of the facility.
+The project demonstrates Ansh Developers’ capability in executing government
+infrastructure and institutional development projects.`,
     totalArea: "",
     materials: [],
     client: "Uttar Pradesh Matsya (Fisheries) Department",
@@ -533,19 +614,42 @@ company’s capability to execute large-scale premium civil and infrastructure d
 
   {
     id: "govardhan-enclave-residential",
-    title: "Residential Building Development – Govardhan Enclave",
+    title: `Development of a residential building under the Uttar Pradesh Government housing scheme 
+in Lucknow.`,
     tagline: "Government Housing Scheme Construction",
     location: "Vrindavan Awas Yojana, Lucknow, Uttar Pradesh",
     category: "Government Projects",
-    projectHighlights: [],
+    projectHighlights: [
+      "Residential building development under Vrindavan Awas Yojana",
+      "Government housing scheme infrastructure project",
+      "Construction executed as per approved development plans",
+      "Durable and functional residential building structure",
+      "Project completed according to construction standards for housing developments"
+    ],
     year: null,
     startDate: "",
     completionDate: "",
-    image:
-      "https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?auto=format&fit=crop&w=1600&q=80",
-    gallery: [],
+    image: "/projects/govardhan-enclave-proj/govardhanimg1.jpeg",
+    gallery: [
+      "/projects/govardhan-enclave-proj/govardhanimg1.jpeg",
+      "/projects/govardhan-enclave-proj/govardhanimg2.jpeg",
+      "/projects/govardhan-enclave-proj/govardhanimg3.jpeg",
+
+    ],
     description:
-      "Residential building construction executed under the Uttar Pradesh Government housing scheme at Vrindavan Awas Yojana, developed according to approved architectural plans.",
+      `This project involved the construction and development of a residential building at
+Govardhan Enclave, located within the Vrindavan Awas Yojana housing scheme in
+Lucknow. The project was executed in accordance with the approved architectural plans
+and development guidelines provided under the housing scheme.
+Vrindavan Awas Yojana is a major residential development initiative in Lucknow aimed at
+providing modern housing infrastructure and planned residential communities. As part of
+this project, Ansh Developers carried out the complete construction of the building from
+the initial foundation stage to the final structural completion.
+The work included structural development, building construction, and finishing work
+necessary to deliver a durable and well-planned residential structure aligned with the
+standards required for government housing developments.
+This project demonstrates Ansh Developers’ capability in executing government residential
+housing projects with precision and adherence to approved construction plans. `,
     totalArea: "",
     materials: [],
     client: "Uttar Pradesh Government Housing Scheme",
@@ -581,18 +685,38 @@ company’s capability to execute large-scale premium civil and infrastructure d
   {
     id: "mi-rustle-court-apartment",
     title: "Building Construction – MI Rustle Court Apartment",
-    tagline: "Premium Residential Apartment Construction",
+    tagline: `Construction work undertaken for a premium residential apartment society in Lucknow.`,
     location: "Lucknow, Uttar Pradesh",
     category: "Residential Projects",
-    projectHighlights: [],
+    projectHighlights: [
+      "Construction work in a premium residential housing society",
+      "Modern apartment building infrastructure",
+      "High-quality residential construction standards",
+      "Durable structural development for long-term use",
+      "Project executed within a planned residential community"
+    ],
     year: null,
     startDate: "",
     completionDate: "",
     image:
-      "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?auto=format&fit=crop&w=1600&q=80",
-    gallery: [],
+      "/projects/mi-rustle-court-proj/mirustle3.jpg",
+    gallery: [
+      "/projects/mi-rustle-court-proj/mirustle3.jpg",
+      "/projects/mi-rustle-court-proj/mirustle2.jpg",
+      "/projects/mi-rustle-court-proj/mirustle1.jpeg",
+    ],
     description:
-      "Construction of a residential apartment building within the MI Rustle Court premium housing society, focusing on structural durability and modern residential infrastructure.",
+      `This project involved building construction work at MI Rustle Court Apartment, a premium
+residential housing society located in Lucknow. The project focused on developing a high
+quality residential building structure designed to meet modern housing standards and
+provide comfortable urban living spaces.
+MI Rustle Court is known as a well-developed residential society in Lucknow, offering
+modern apartment living with strong infrastructure and planned residential amenities. Ansh
+Developers carried out the construction of the building structure, ensuring the project was
+executed with strong structural integrity and quality construction standards.
+The work was performed with attention to durability, architectural design, and structural
+reliability, ensuring that the building meets the requirements of a modern residential
+society.`,
     totalArea: "",
     materials: [],
     client: "",

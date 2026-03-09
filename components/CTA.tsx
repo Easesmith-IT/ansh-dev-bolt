@@ -32,21 +32,21 @@ const CTA = () => {
     }));
   };
 
- useEffect(() => {
-   if (state.succeeded) {
-     toast.success("Your request has been submitted.");
+  useEffect(() => {
+    if (state.succeeded) {
+      toast.success("Your request has been submitted.");
 
-     setFormData({
-       name: "",
-       phone: "",
-       email: "",
-       projectType: "",
-       details: "",
-     });
+      setFormData({
+        name: "",
+        phone: "",
+        email: "",
+        projectType: "",
+        details: "",
+      });
 
-     formRef.current?.reset();
-   }
- }, [state.succeeded]);
+      formRef.current?.reset();
+    }
+  }, [state.succeeded]);
 
   return (
     <section
@@ -102,7 +102,7 @@ const CTA = () => {
 
                 <div>
                   <p className="text-sm text-gray-400">Call Us Anytime</p>
-                  <p className="text-xl font-semibold">+91 7838035916</p>
+                  <p className="text-xl font-semibold">+91 9580171654</p>
                 </div>
               </motion.div>
 

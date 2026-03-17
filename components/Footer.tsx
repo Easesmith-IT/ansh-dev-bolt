@@ -49,7 +49,7 @@ const Footer = () => {
 
             </div>
             <p className="text-gray-400 mb-6 leading-relaxed">
-              Building excellence since 2008. Your trusted construction partner
+              Building excellence since 2014. Your trusted construction partner
               in Lucknow for residential, commercial, and turnkey projects.
             </p>
             <div className="flex space-x-4">

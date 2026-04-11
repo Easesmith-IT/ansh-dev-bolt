@@ -1,14 +1,12 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
-import { useForm, ValidationError } from "@formspree/react";
+import { ValidationError } from "@formspree/react";
 import { motion } from "framer-motion";
-import { Phone, Mail, ArrowRight } from "lucide-react";
-import { useToast } from "@/hooks/use-toast";
+import { ArrowRight, Mail, Phone } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
 import { toast } from "sonner";
 
 const CTA = () => {
-  const [state, handleSubmit] = useForm("mojkvpbg");
   const formRef = useRef<HTMLFormElement>(null);
 
   const [formData, setFormData] = useState({
@@ -32,21 +30,49 @@ const CTA = () => {
     }));
   };
 
-  useEffect(() => {
-    if (state.succeeded) {
-      toast.success("Your request has been submitted.");
+  const [loading, setLoading] = useState(false);
 
-      setFormData({
-        name: "",
-        phone: "",
-        email: "",
-        projectType: "",
-        details: "",
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    if (loading) return;
+
+    setLoading(true);
+
+    try {
+      const res = await fetch("https://formspree.io/f/mojkvpbg", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          ...formData,
+          _subject: "New Construction Inquiry",
+        }),
       });
 
-      formRef.current?.reset();
+      if (res.ok) {
+        toast.success("Your request has been submitted.");
+
+        setFormData({
+          name: "",
+          phone: "",
+          email: "",
+          projectType: "",
+          details: "",
+        });
+
+        formRef.current?.reset();
+      } else {
+        toast.error("Failed to submit");
+      }
+    } catch (err) {
+      toast.error("Network error");
+    } finally {
+      setLoading(false);
     }
-  }, [state.succeeded]);
+  };
 
   return (
     <section
@@ -102,7 +128,7 @@ const CTA = () => {
 
                 <div>
                   <p className="text-sm text-gray-400">Call Us Anytime</p>
-                  <p className="text-xl font-semibold">+91 9580171654</p>
+                  <p className="text-xl font-semibold">+91 7838035916</p>
                 </div>
               </motion.div>
 
@@ -200,11 +226,11 @@ const CTA = () => {
                   className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#FFC107] outline-none"
                 />
 
-                <ValidationError
+                {/* <ValidationError
                   prefix="Email"
                   field="email"
                   errors={state.errors}
-                />
+                /> */}
               </div>
 
               <div>
@@ -242,22 +268,22 @@ const CTA = () => {
                   className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#FFC107] outline-none"
                 />
 
-                <ValidationError
+                {/* <ValidationError
                   prefix="Details"
                   field="details"
                   errors={state.errors}
-                />
+                /> */}
               </div>
 
               <button
                 type="submit"
-                disabled={state.submitting}
+                disabled={loading}
                 className="w-full bg-[#1F7A63] text-white px-6 py-4 rounded-lg font-semibold hover:bg-[#186d57] transition-all duration-300 shadow-lg disabled:opacity-70"
               >
-                {state.submitting ? "Submitting..." : "Submit Request"}
+                {loading ? "Submitting..." : "Submit Request"}
               </button>
 
-              <ValidationError errors={state.errors} />
+              {/* <ValidationError errors={state.errors} /> */}
             </form>
           </motion.div>
         </div>
